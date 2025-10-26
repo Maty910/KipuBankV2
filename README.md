@@ -1,8 +1,8 @@
-# KipuBank V2 🏦
+# KipuBank V2
 
 KipuBank V2 es la evolución del contrato original, transformándolo en una solución de grado producción con soporte multi-token, control de acceso basado en roles, integración con oráculos de Chainlink y arquitectura modular escalable.
 
-## 🚀 Mejoras Principales
+## Mejoras Principales
 
 ### 1. **Control de Acceso Basado en Roles**
 - Implementación de `AccessControl` de OpenZeppelin
@@ -38,7 +38,7 @@ KipuBank V2 es la evolución del contrato original, transformándolo en una solu
 - `setPriceFeed()` para actualizar el oráculo
 - Control granular mediante roles
 
-## 📋 Diferencias vs V1
+## Diferencias vs V1
 
 | Característica | V1 | V2 |
 |----------------|----|----|
@@ -49,7 +49,7 @@ KipuBank V2 es la evolución del contrato original, transformándolo en una solu
 | Decimales | No aplica | Conversión multi-token |
 | Arquitectura | Monolítica | Modular (herencia) |
 
-## 🔧 Decisiones de Diseño
+## Decisiones de Diseño
 
 ### Por qué AccessControl en lugar de Ownable
 - **Escalabilidad**: Permite múltiples administradores con diferentes permisos
@@ -66,7 +66,7 @@ KipuBank V2 es la evolución del contrato original, transformándolo en una solu
 - **Inmutabilidad del PriceFeed**: Se permite cambiar la dirección para casos de actualización del protocolo
 - **ReentrancyGuard en views**: Solo en funciones que interactúan con contratos externos
 
-## 📦 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 KipuBankV2/
@@ -75,7 +75,7 @@ KipuBankV2/
 └── README.md
 ```
 
-## 🛠️ Despliegue
+## Despliegue
 
 ### Parámetros del Constructor
 
@@ -103,13 +103,13 @@ _priceFeed: 0x694AA1769357215DE4FAC081bf1f309aDC325306  // Chainlink ETH/USD Sep
 - Optimización: Habilitada (200 runs)
 - EVM Version: Paris
 
-## 📍 Contrato Desplegado
+## Contrato Desplegado
 
 **Red:** Sepolia Testnet  
 **Address:** `0xc4Da572710D0361765aC3719C6aE7a317646e05f`  
 **Etherscan:** [Ver código verificado](https://sepolia.etherscan.io/address/0xc4Da572710D0361765aC3719C6aE7a317646e05f#code)
 
-## 🎯 Funcionalidades Principales
+## Funcionalidades Principales
 
 ### Para Usuarios
 - `deposit()` - Depositar ETH
@@ -128,16 +128,16 @@ _priceFeed: 0x694AA1769357215DE4FAC081bf1f309aDC325306  // Chainlink ETH/USD Sep
 - `updateEthUsdPrice(uint256 newPrice)` - Actualizar precio manualmente
 - `updatePriceFromChainlink()` - Actualizar desde Chainlink
 
-## 🔐 Patrones de Seguridad
+## Patrones de Seguridad
 
-- ✅ **Checks-Effects-Interactions** - Orden correcto en todas las funciones
-- ✅ **ReentrancyGuard** - Protección contra ataques de reentrancy
-- ✅ **SafeERC20** - Transferencias seguras de tokens
-- ✅ **Access Control** - Restricción de funciones críticas
-- ✅ **Custom Errors** - Eficiencia en gas y claridad
-- ✅ **Input Validation** - Validaciones exhaustivas con `require`
+-  **Checks-Effects-Interactions** - Orden correcto en todas las funciones
+-  **ReentrancyGuard** - Protección contra ataques de reentrancy
+-  **SafeERC20** - Transferencias seguras de tokens
+-  **Access Control** - Restricción de funciones críticas
+-  **Custom Errors** - Eficiencia en gas y claridad
+-  **Input Validation** - Validaciones exhaustivas con `require`
 
-## 🧪 Testing
+## Testing
 
 ### Casos de Prueba Implementados
 - Depósitos y retiros de ETH
@@ -147,22 +147,17 @@ _priceFeed: 0x694AA1769357215DE4FAC081bf1f309aDC325306  // Chainlink ETH/USD Sep
 - Actualización de precios desde oráculo
 - Conversión de decimales entre tokens
 
-## 📚 Referencias
-
-- [OpenZeppelin Contracts](https://docs.openzeppelin.com/contracts/)
-- [Chainlink Price Feeds](https://docs.chain.link/data-feeds)
-- [Solidity Best Practices](https://consensys.github.io/smart-contract-best-practices/)
-
-## 👨‍💻 Autor
+## Autor
 
 **Matías Chacón**  
-Proyecto Final - Curso Blockchain Kipu
+Proyecto Final Módulo 3
 
-## 📄 Licencia
+## Licencia
 
 MIT License - Ver contrato para detalles
 
 ---
 
 **Versión anterior:** [KipuBank V1](https://github.com/Maty910/kipu-bank)
+
 
