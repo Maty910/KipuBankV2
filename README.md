@@ -38,6 +38,12 @@ KipuBank V2 es la evolución del contrato original, transformándolo en una solu
 - `setPriceFeed()` para actualizar el oráculo
 - Control granular mediante roles
 
+# Clonar el repositorio
+```bash
+git clone https://github.com/Maty910/KipuBankV2.git
+cd KipuBankV2
+```
+
 ## Diferencias vs V1
 
 | Característica | V1 | V2 |
@@ -159,5 +165,6 @@ MIT License - Ver contrato para detalles
 ---
 
 **Versión anterior:** [KipuBank V1](https://github.com/Maty910/kipu-bank)
+
 
 
